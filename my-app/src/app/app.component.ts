@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  names = ["Barak Opoli","Antonio Conte","Marcello Rossi","Alberto Barbero","Debora Servetti","Paolo Cortese","Paolino Paperino"];
+  myName='Napoli Elia'
+
+  changeName(){
+    this.myName=this.names[Math.floor(Math.random()*7)];
+  }
 }
