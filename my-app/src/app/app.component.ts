@@ -13,6 +13,6 @@ export class AppComponent {
     this.myName=this.names[this.getRandomInt(0,7)];
   }
   getRandomInt(min,max){
-    return Math.floor(Math.random()*(max-min))+min;
+    return Math.floor(Math.random()*(max-min+1))+min;
   }
 }
