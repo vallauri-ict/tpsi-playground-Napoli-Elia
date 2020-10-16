@@ -10,6 +10,9 @@ export class AppComponent {
   myName='Napoli Elia'
 
   changeName(){
-    this.myName=this.names[Math.floor(Math.random()*7)];
+    this.myName=this.names[this.getRandomInt(0,7)];
+  }
+  getRandomInt(min,max){
+    return Math.floor(Math.random()*(max-min))+min;
   }
 }
