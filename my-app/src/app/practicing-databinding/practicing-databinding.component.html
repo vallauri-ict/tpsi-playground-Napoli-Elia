@@ -1,0 +1,12 @@
+<h4>INSTRUCTIONS</h4>
+<ol>
+    <li>Add an input Field which updates the input property "username" with the <b>two-way databinding</b></li>
+    <li>Output the "username" property below the Input Field using <b>string interpolation</b></li>
+    <li>Add a <b>button only ENABLED</b> if the "username" is NOT an empty string</li>
+    <li>Upon <b>clicking the button</b> the "username" should be reset to an empty string</li>
+</ol>
+<h4>RESULT</h4>
+<!--TODO: fare l'esercizio di angular-->
+<input type="text" class='form-control' [(ngModel)]="name" (input)="onUpdateName()" id="txtServername">
+<p>{{name}}</p>
+<button class="btn btn-primary" [disabled]="!buttonEnabled" (click)="clearName()">Pulisci campo username</button>
